@@ -1,3 +1,3 @@
-module Briarpc
+module BriarPC
   VERSION = "0.1.0"
 end

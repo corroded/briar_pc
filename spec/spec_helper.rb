@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "briarpc"
+require "briar_pc"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

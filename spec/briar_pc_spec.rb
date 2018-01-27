@@ -1,6 +1,6 @@
-RSpec.describe Briarpc do
+RSpec.describe BriarPC do
   it "has a version number" do
-    expect(Briarpc::VERSION).not_to be nil
+    expect(BriarPC::VERSION).not_to be nil
   end
 
   it "does something useful" do

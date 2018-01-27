@@ -1,17 +1,16 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "briarpc/version"
+require "briar_pc/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "briarpc"
-  spec.version       = Briarpc::VERSION
+  spec.name          = "briar_pc"
+  spec.version       = BriarPC::VERSION
   spec.authors       = ["Eumir Gaspar"]
   spec.email         = ["eumirgaspar@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A Ruby RPC library for RaiBlocks}
+  spec.description   = %q{A Ruby RPC library for RaiBlocks}
+  spec.homepage      = "https://github.com/corroded/briar_pc"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
