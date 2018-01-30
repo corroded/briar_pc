@@ -1,6 +1,8 @@
 # BriarPC
 
 [![Build Status](https://travis-ci.org/corroded/briar_pc.svg?branch=master)](https://travis-ci.org/corroded/briar_pc)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ae6bf0d9f66353800d64/maintainability)](https://codeclimate.com/github/corroded/briar_pc/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ae6bf0d9f66353800d64/test_coverage)](https://codeclimate.com/github/corroded/briar_pc/test_coverage)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/briar_pc`. To experiment with that code, run `bin/console` for an interactive prompt.
 
