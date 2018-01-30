@@ -1,11 +1,6 @@
 # frozen_string_literal: true
 
-require 'net/http'
-require 'json'
-
 module BriarPC
-  DEFAULT_ENDPOINT = 'http://localhost:7076'
-
   class Block
     attr_reader :block_count, :endpoint
 
@@ -13,10 +8,17 @@ module BriarPC
       @endpoint = URI(DEFAULT_ENDPOINT)
     end
 
-    def get_block_count
-      @block_count = ::Net::HTTP.post(
+    def block_count
+      response = request_action('block_count')
+      @block_count = JSON.parse(response.body)
+    end
+
+    private
+
+    def request_action(action)
+      ::Net::HTTP.post(
         endpoint,
-        {'account' => 'block_count'}.to_json,
+        {'action': action}.to_json,
         'Content-Type' => 'application/json'
       )
     end

@@ -1,9 +1,9 @@
-RSpec.describe BriarPC do
-  it "has a version number" do
-    expect(BriarPC::VERSION).not_to be nil
-  end
+# frozen_string_literal: true
 
-  it "does something useful" do
-    expect(false).to eq(true)
+require 'spec_helper'
+
+RSpec.describe Briarpc do
+  it 'has a version number' do
+    expect(Briarpc::VERSION).not_to be nil
   end
 end
