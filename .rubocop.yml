@@ -1,0 +1,20 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'app/views'
+    - 'bin/**/*'
+    - 'db/**/*'
+Metrics/LineLength:
+  Max: 170
+Documentation:
+  Enabled: false
+FrozenStringLiteralComment:
+  Enabled: true
+Style/Lambda:
+  EnforcedStyle: literal
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - 'config/**/*'
